@@ -118,5 +118,5 @@ if cart_Total> 150 then add discount 20 rs. Else Discount based on product as gi
 + If 2 of Item B is purchased, the price of both is Rs 35(i.e multiples of 2 discount) <br />
 + If the total basket price(after previous discounts) is over Rs 150, the basket receives an <br />
 additional discount of Rs 20.<br />
-+ Above condition could acheave after calculating total price from cart if totalPrice > 150 then discount will be applied -20. <br/>
++ Above condition could achieve after calculating total price from cart if totalPrice > 150 then discount will be applied -20. <br/>
 + Please go threw Test Cases attached with project for more clarity.
