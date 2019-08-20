@@ -4,7 +4,7 @@ It is a simple basket developed on Node JS platform with loopback 3.0 Version fr
 1 : oracle DB  <br />
 2 : Node Envoiroment  <br />
 3 : Clone the folder into your System  <br />
-4 : Unzip Folder <br />
+4 : Unzip Folder ProductCart_Basket <br />
 5 : Go inside folder and run into CMD.  <br />
 6 : npm install  <br />
 7 : Goto project Structure inside server/datasource.json change the connection ip with your system IP.Also configure user and password to connect from schema <br />
