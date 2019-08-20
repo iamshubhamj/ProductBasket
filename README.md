@@ -49,6 +49,7 @@ Response :
 {
    message : 'Product added successfully'.
 }
+
 3: Updating Quantity of Items :
 
 Method  : POST
