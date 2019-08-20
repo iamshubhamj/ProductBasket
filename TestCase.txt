@@ -1,0 +1,177 @@
+1 : Adding product as admin with valid data as given below :
+Positive Scenario :
+API : https://localhost:3000/api/getList/product
+Data : 
+{
+  "prodCategory": "B",
+  "prodName": "Apple",
+  "prodPrice": "20",
+  "prodDiscount": "1"
+}
+
+Result : Pass
+ 
+ 
+ Negative Scenario :
+ 
+ Data :
+ 
+ {
+ 
+ }
+ Result :
+ {
+    "message": "Oops Somethings went wrong !!!!"
+ }
+
+2 : Add Items :
+Positive Scenario :
+API : https://localhost:3000/api/user/addItems
+
+Data :
+{
+  "prodId": 265,
+  "prodName": "paneer",
+  "prodPrice": 30,
+  "prodDiscount" : 15
+}
+
+Result : Pass
+
+Negative Scenario :
+ 
+ Data :
+ 
+ {
+ 
+ }
+ Result :
+ {
+    "message": "Oops Somethings went wrong !!!!"
+ }
+ 
+ 3 : Update Items :
+Positive Scenario :
+API : https://localhost:3000/api/user/updating_Items
+Note : Based on prodId and prodPrice data is operating.
+
+Data :
+{
+  "prodId": 262,
+  "prodName": "Potato",
+  "prodPrice": 20,
+  "prodDiscount" : 6,
+  "totalNumber" : 2
+}
+
+Result : Pass
+
+Negative Scenario :
+ 
+Invalid Data :
+ 
+{
+  "prodId": 62,
+  "prodName": "Potato",
+  "prodPrice": 20,
+  "prodDiscount" : 6,
+  "totalNumber" : 2
+}
+ Result :
+ {
+    "message": "Oops Somethings went wrong !!!!"
+ }
+ 
+4: Calculation Api
+
+Positive Scenario :
+API :  https://localhost:3000/api/user/calcItems?prodId=262
+Check : basketCheckout_Price for total_Price and discount_Applied calculation
+Note : Based on prodId.
+--> with discount
+Output :
+[
+    {
+        "prodA_Price": 30,
+        "prodA_Discount": 15,
+        "total_Price": 180,
+        "discount_Applied": 30
+    },
+    {
+        "prodB_Price": 20,
+        "prodB_Discount": 5,
+        "total_Price": 35,
+        "discount_Applied": 5
+    },
+    {
+        "prodC_Price": 50,
+        "prodC_Discount": 0,
+        "total_Price": 50,
+        "discount_Applied": 0
+    },
+    {
+        "prodD_Price": 15,
+        "prodD_Discount": 0,
+        "total_Price": 45,
+        "discount_Applied": 0
+    },
+    {
+        "basketCheckout_Price": {
+            "payable": {
+                "Total_Price": 290,
+                "Total_Discount": 55
+            }
+        }
+    }
+]
+
+Result : Pass
+
+ --> without discount
+[
+    {
+        "prodA_Price": 30,
+        "prodA_Discount": 15,
+        "total_Price": 75,
+        "discount_Applied": 15
+    },
+    {
+        "prodA_Price": 20,
+        "prodB_Discount": 5,
+        "total_Price": 0,
+        "discount_Applied": 0
+    },
+    {
+        "prodC_Price": 50,
+        "prodC_Discount": 0,
+        "total_Price": 0,
+        "discount_Applied": 0
+    },
+    {
+        "prodD_Price": 15,
+        "prodD_Discount": 0,
+        "total_Price": 0,
+        "discount_Applied": 0
+    },
+    {
+        "basketCheckout_Price": {
+            "payable": {
+                "Total_Price": 75,
+                "Total_Discount": 15
+            }
+        }
+    }
+]
+
+
+Negative Scenario :
+ 
+Invalid Data : Invalid ProdId
+https://localhost:3000/api/user/calcItems?prodId=26
+ 
+{
+    "message": "Oops Somethings went wrong !!!!!!"
+}
+
+
+ 
