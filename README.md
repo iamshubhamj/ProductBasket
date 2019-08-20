@@ -6,7 +6,9 @@ It is a simple basket developed on Node JS platform with loopback framework. (Ex
 3 : Clone the folder into your System  <br />
 4 : Go inside folder and run into CMD.  <br />
 5 : npm install  <br />
-6 : nodemon .  <br />
+6 : Goto project Structure inside server/datasource.json change the connection ip with your system IP. <br />
+7 : For creating Tabel with script into oracle change Tabel Name into server/bin/create_tabel.js and Run.  <br />
+8 : nodemon .  <br />
 Product will start listening on the port number 3000.  <br /> 
 Web server listening at: http://localhost:3000  <br />
 Browse your REST API at http://localhost:3000/explorer  <br />
@@ -69,7 +71,7 @@ Response :
 }
 
 4 : Returning list of data basket/cart(with individual price and discount data),the total price and total discounts applied.
-Method : GET ( NOTE : Pass ProdId as a unique guest user and basketCheckout_Price is a total amount and discount calculation object).
+Method : GET ( NOTE : Pass ProdId as a unique guest user and basketCheckout_Price is a total amount and discount calculation object).  <br />
 API : https://localhost:3000/api/user/calcItems?prodId=262
 
 Response :
@@ -78,8 +80,8 @@ Response :
     {
         "prodA_Price": 30,
         "prodA_Discount": 15,
-        "total_Price": 135,
-        "discount_Applied": 15
+        "total_Price": 180,
+        "discount_Applied": 30
     },
     {
         "prodB_Price": 20,
@@ -101,10 +103,11 @@ Response :
     },
     {
         "basketCheckout_Price": {
-            "Total_Price": 265,
-            "Total_Discount": 20
+            "payable": {
+                "Total_Price": 290,
+                "Total_Discount": 55
+            }
         }
     }
 ]
-
 # Please go threw Test Cases attached with project for more clarity.
