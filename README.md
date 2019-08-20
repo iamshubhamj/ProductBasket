@@ -1,5 +1,5 @@
 # ProductBasket
-It is a simple basket developed on Node JS platform with loopback framework. (Ex : Clone of Flipkart Add cart and product basket and pay logic). <br />
+It is a simple basket developed on Node JS platform with loopback 3.0 Version framework. (Ex : Clone of Flipkart Add cart and product basket and pay logic). <br />
 # Required Tool and Steps to Run The Project
 1 : oracle DB  <br />
 2 : Node Envoiroment  <br />
