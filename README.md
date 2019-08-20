@@ -6,7 +6,7 @@ It is a simple basket developed on Node JS platform with loopback 3.0 Version fr
 3 : Clone the folder into your System  <br />
 4 : Go inside folder and run into CMD.  <br />
 5 : npm install  <br />
-6 : Goto project Structure inside server/datasource.json change the connection ip with your system IP. <br />
+6 : Goto project Structure inside server/datasource.json change the connection ip with your system IP.Also configure user and password to connect from schema <br />
 7 : For creating Tabel with script into oracle change Tabel Name into server/bin/create_tabel.js and Run.  <br />
 8 : nodemon .  <br />
 Product will start listening on the port number 3000.  <br /> 
