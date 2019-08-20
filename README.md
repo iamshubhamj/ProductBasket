@@ -1,17 +1,17 @@
 # ProductBasket
 It is a simple basket developed on Node JS platform with loopback framework. (Ex : Clone of Flipkart Add cart and product basket and pay logic). <br />
-#Required Tool and Steps to Run The Project
-1 : oracle DB
-2 : Node Envoiroment
-3 : Clone the folder into your System
-4 : Go inside folder and run into CMD.
-5 : npm install
-6 : nodemon .
-Product will start listening on the port number 3000.
-Web server listening at: http://localhost:3000
-Browse your REST API at http://localhost:3000/explorer
-# PFB API's with Request and Response
-1 : Basic API for Admin to register A,B,C,D Products
+# Required Tool and Steps to Run The Project
+1 : oracle DB  <br />
+2 : Node Envoiroment  <br />
+3 : Clone the folder into your System  <br />
+4 : Go inside folder and run into CMD.  <br />
+5 : npm install  <br />
+6 : nodemon .  <br />
+Product will start listening on the port number 3000.  <br /> 
+Web server listening at: http://localhost:3000  <br />
+Browse your REST API at http://localhost:3000/explorer  <br />
+# PFB API's with Request and Response  <br />
+1 : Basic API for Admin to register A,B,C,D Products  <br />
 
 Api : https://localhost:3000/api/getList/product
 Method : POST
