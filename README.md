@@ -72,7 +72,7 @@ Response :
 
 4 : Returning list of data basket/cart(with individual price and discount data),the total price and total discounts applied.
 Method : GET <br />
-# NOTE : Pass ProdId as a unique guest user and basketCheckout_Price is a total amount and discount calculation object.  <br />
+- NOTE : Pass ProdId as a unique guest user and basketCheckout_Price is a total amount and discount calculation object.  <br />
 API : https://localhost:3000/api/user/calcItems?prodId=262
 
 Response :
